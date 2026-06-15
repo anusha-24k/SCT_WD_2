@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flow Zone — Focus Stopwatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div class="dashboard">
+ 
+    <!-- ==============================
+         LEFT — FOCUS CONTROL DECK
+    ============================== -->
+    <div class="panel left-panel">
+ 
+      <!-- App Header -->
+      <div class="app-header">
+        <div class="app-title-row">
+          <span class="app-icon">⚡</span>
+          <h1 class="app-title">Flow Zone</h1>
+        </div>
+        <!-- Status indicator -->
+        <div class="status-badge" id="statusBadge">
+          <span class="status-dot" id="statusDot"></span>
+          <span class="status-text" id="statusText">IDLE</span>
+        </div>
+      </div>
+ 
+      <!-- Divider -->
+      <div class="divider"></div>
+ 
+      <!-- Giant Timer Display -->
+      <div class="timer-wrap">
+        <div class="timer-display" id="timerDisplay">
+          <span class="timer-hms" id="timerHMS">00:00:00</span>
+          <span class="timer-ms"  id="timerMS">.00</span>
+        </div>
+        <!-- Footer tagline -->
+        <p class="timer-tagline">Track Time &bull; Measure Focus &bull; Enter The Flow</p>
+      </div>
+ 
+      <!-- Divider -->
+      <div class="divider"></div>
+ 
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="btn btn-start"    id="btnStart"   onclick="startTimer()">
+          <span class="btn-icon">▶</span> START
+        </button>
+        <button class="btn btn-pause"    id="btnPause"   onclick="pauseTimer()"   disabled>
+          <span class="btn-icon">⏸</span> PAUSE
+        </button>
+        <button class="btn btn-interval" id="btnInterval" onclick="logInterval()" disabled>
+          <span class="btn-icon">⊕</span> LOG INTERVAL
+        </button>
+        <button class="btn btn-reset"    id="btnReset"   onclick="resetTimer()">
+          <span class="btn-icon">↺</span> RESET
+        </button>
+      </div>
+ 
+      <!-- Divider -->
+      <div class="divider"></div>
+ 
+      <!-- Live Session Stats -->
+      <div class="stats-section">
+        <p class="stats-heading">Live Session Stats</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value" id="statTotal">0</span>
+            <span class="stat-label">Total Intervals</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="statBest">—</span>
+            <span class="stat-label">Best Interval</span>
+          </div>
+          <div class="stat-card stat-card-full">
+            <span class="stat-value" id="statElapsed">00:00:00.00</span>
+            <span class="stat-label">Total Elapsed Time</span>
+          </div>
+        </div>
+      </div>
+ 
+    </div><!-- /left-panel -->
+ 
+ 
+    <!-- ==============================
+         RIGHT — INTERVAL STREAM
+    ============================== -->
+    <div class="panel right-panel">
+ 
+      <!-- Header -->
+      <div class="stream-header">
+        <div class="stream-title-row">
+          <h2 class="stream-title">Interval Stream</h2>
+          <span class="stream-count" id="streamCount">0 logged</span>
+        </div>
+        <!-- Legend -->
+        <div class="legend">
+          <span class="legend-item"><span class="dot green"></span> Peak Flow</span>
+          <span class="legend-item"><span class="dot yellow"></span> Steady</span>
+          <span class="legend-item"><span class="dot red"></span> Stalled</span>
+        </div>
+      </div>
+ 
+      <!-- Divider -->
+      <div class="divider"></div>
+ 
+      <!-- Interval Cards List -->
+      <div class="interval-stream" id="intervalStream">
+ 
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">⏱</div>
+          <p class="empty-title">No intervals recorded yet.</p>
+          <p class="empty-sub">Start the timer and log your first interval.</p>
+        </div>
+ 
+      </div><!-- /interval-stream -->
+ 
+    </div><!-- /right-panel -->
+ 
+  </div><!-- /dashboard -->
+ 
+  <script src="script.js"></script>
+</body>
+</html>

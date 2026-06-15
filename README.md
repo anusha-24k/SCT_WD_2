@@ -1,8 +1,6 @@
-# ⚡ Flow Zone
+# Flow Zone
  
 Flow Zone is a split-screen productivity stopwatch dashboard built as a focus tracking and time measurement tool. The project focuses on accurate timer logic, real-time UI updates, and a modern dark-themed dashboard experience across desktop and mobile devices.
- 
----
  
 ## Features
  
@@ -14,8 +12,6 @@ Flow Zone is a split-screen productivity stopwatch dashboard built as a focus tr
 - Cyan glow pulse animation while timer is running
 - Keyboard shortcuts (Space · L · R)
 - Responsive design for all screen sizes
----
- 
 ## Technologies Used
  
 - HTML5
@@ -25,8 +21,6 @@ Flow Zone is a split-screen productivity stopwatch dashboard built as a focus tr
 - Google Fonts
 - Date API
 - setInterval / clearInterval
----
- 
 ## What I Learned
  
 Through this project, I improved my understanding of:
@@ -37,16 +31,11 @@ Through this project, I improved my understanding of:
 - Conditional logic for dynamic categorization
 - Split-screen dashboard layout design
 - Keyboard event handling
----
- 
 ## Project Objective
  
 The goal of this project was to build an interactive stopwatch application with advanced interval tracking and performance categorization, while strengthening JavaScript logic-building and real-time UI update skills through practical implementation.
  
----
- 
 ## Author
-
+ 
 Anusha Gunupuru
-
 LinkedIn: https://www.linkedin.com/in/gunupuru-anusha-9047b0325/

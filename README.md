@@ -46,7 +46,7 @@ The goal of this project was to build an interactive stopwatch application with 
 ---
  
 ## Author
- 
-**Anusha Gunupuru**
 
-LinkedIn: [gunupuru-anusha](https://www.linkedin.com/in/gunupuru-anusha-9047b0325/)
+Anusha Gunupuru
+
+LinkedIn: https://www.linkedin.com/in/gunupuru-anusha-9047b0325/
